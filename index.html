@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>
+            Simple Responsive Web Design
+        </title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+    </head>
+    <body> 
+        
+        <div class="container">
+            <!-- <div class="header">
+                <h1>Header</h1>
+            </div> -->
+            <div class="main-content">
+                <div>
+                    <button class="nav-btn">Show Menu</button>
+                </div>
+                <div class="col-2 menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Contact</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-5 content">
+                <img src="images/fashion.jpeg">
+                    <p>
+                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                     when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                     It has survived not only five centuries, but also the leap into electronic typesetting, 
+                     remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets 
+                     containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                    <p>
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                    </p>
+                   
+                </div>
+                <div class="col-2 right-side">
+                    <div>
+                        <h3>Makeup Pallets</h3>
+                        <img src="images/makeup1.jpg"/>
+                    </div>
+                    
+                    <div>
+                            <h3>Brushes</h3> 
+                            <img src="images/makeup2.jpg"/>
+                    </div>
+
+                    <div>
+                            <h3>Makeup Kit</h3> 
+                            <img src="images/makeup3.jpg"/>
+                    </div>
+                        
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="footer">
+                &copy;Copyrights 2019.
+            </div>
+            
+        </div>
+        <!-- <script>
+        $(function(){
+            $(".nav-btn").on('click', function(){
+                $(".menu ul").slideToggle();
+            });
+        })
+        </script> -->
+
+        <script>
+                $(function(){
+
+                    
+                    $(".nav-btn").on('click', function(){
+                        var $this = $(this);
+
+                        if($this.html() === 'Show Menu'){
+                            $(".menu ul").slideDown();
+                            $this.html("Hide Menu");
+                        }else{
+                            $(".menu ul").slideUp();
+                            $this.html("Show Menu");
+                        }
+                       
+                    });
+                })
+                </script>
+    </body>
+</html>

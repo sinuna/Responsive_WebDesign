@@ -1,0 +1,100 @@
+        
+        .container{
+            margin: auto;
+            width: 90%;
+            padding:0px 10px 0 10px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+
+        .header{
+            text-align:left;
+            height: 150px;
+            background: #cecece;
+            padding:10px;
+        }
+        p{
+            text-align: justify;
+            font-family: sans-serif;
+        }
+        .col-1{width: 10%;}
+        .col-2{width: 20%;}
+        .col-3{width: 30%;}
+        .col-4{width: 40%;}
+        .col-5{width: 59%;}
+        .col-5{width: 60%;}
+
+        [class *="col-"]{
+            float: left;
+        }
+       
+        .clear{
+            clear:both;
+        }
+        .right-side{
+            float: right;
+        }
+        .right-side img{
+            transform: rotate(7deg);
+            box-shadow: 10px 10px 5px #888888;
+            width: 50%;
+        }
+        .menu ul{
+            list-style: none;
+        }
+        .menu ul li{
+            margin-bottom: 10px;
+            padding: 10px;
+            /* background: #dad7c8; */
+            background: #bc6d68;
+        }
+        .menu ul li a{
+            color:#000000;
+            text-decoration: none;
+        } 
+        /* .content{
+            margin-left: 5px; 
+        } */
+        .content img{
+            width:100%;
+            padding: 10px;
+        }
+        .nav-btn{
+            display: none;
+        }
+        .circle{
+            background: url(./../img/logo.png) no-repeat;
+            height: 150px;
+            width: 150px;
+            border-radius:50%;
+            margin: 10px;
+            float: left;
+        }
+        button {
+            background-color:#bc6d68; 
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+          }
+
+        @media only screen and (max-width:600px){
+            [class *="col-"]{
+                width:100%;
+            }
+            .menu ul{
+                margin-left: -35px;
+                display: none;
+            }
+            .header{
+                height: 80px;
+            }
+            .nav-btn{
+                display: block;
+            }
+        }
+        
